@@ -1,11 +1,14 @@
 package net.nemur.phosom.image.domain;
 
 
+
 public class ImageSimilarity {
 
 	private String firstImageUrl;
 	private String secondImageUrl;
-	private Double distance;
+	private DistanceValues distanceValues;
+	private Integer featureMatchesCountBasic;
+	private Integer featureMatchesCountRANSAC;
 	
 	public String getFirstImageUrl() {
 		return firstImageUrl;
@@ -19,10 +22,23 @@ public class ImageSimilarity {
 	public void setSecondImageUrl(String secondImageUrl) {
 		this.secondImageUrl = secondImageUrl;
 	}
-	public Double getDistance() {
-		return distance;
+	public DistanceValues getDistanceValues() {
+		return distanceValues;
 	}
-	public void setDistance(Double distance) {
-		this.distance = distance;
+	public void setDistanceValues(DistanceValues distanceValues) {
+		this.distanceValues = distanceValues;
 	}
+	public Integer getFeatureMatchesCountBasic() {
+		return featureMatchesCountBasic;
+	}
+	public void setFeatureMatchesCountBasic(Integer featureMatchesCountBasic) {
+		this.featureMatchesCountBasic = featureMatchesCountBasic;
+	}
+	public Integer getFeatureMatchesCountRANSAC() {
+		return featureMatchesCountRANSAC;
+	}
+	public void setFeatureMatchesCountRANSAC(Integer featureMatchesCountRANSAC) {
+		this.featureMatchesCountRANSAC = featureMatchesCountRANSAC;
+	}
+	
 }
